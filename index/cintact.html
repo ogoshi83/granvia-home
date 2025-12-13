@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Granvia Home</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキス">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+        <nav class="sp-nav">
+            <a class="header-logo" href="index.html"><img src="img/logo.png" alt=""></a>
+            <ul class="fade">
+                <li><a href="works.html">建築事例</a></li>
+                <li><a href="performance.html">性能</a></li>
+                <li><a href="news1.html">ニュース</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">相談・見学予約</a></li>
+            </ul>
+        </nav>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="works.html">建築事例</a></li>
+                <li><a href="performance.html">性能</a></li>
+                <li><a href="news1.html">ニュース</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">相談・見学予約</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="contacts wrapper">
+            <h2 class="section-title">
+                <span class="en">CONTACT</span><br>
+                <span class="jp">相談・見学予約</span>
+            </h2>
+
+            <div class="contact">
+                <table class="contact-table">
+                    <tr>
+                        <td class="contact-item">お問い合わせの種類</td>
+                        <td class="contact-body">
+                            <label for="contact-kind" class="contact-kind">
+                                <input type="checkbox" name="kind" value="">
+                                <span class="contact-kind-text">来店予約</span>
+                            </label>
+                            <label for="contact-kind" class="contact-kind">
+                                <input type="checkbox" name="kind" value="">
+                                <span class="contact-kind-text">オンライン予約</span>
+                            </label>
+                            <label for="contact-kind" class="contact-kind">
+                                <input type="checkbox" name="kind" value="">
+                                <span class="contact-kind-text">モデルハウス・完成見学会の予約</span>
+                            </label>
+                            <label for="contact-kind" class="contact-kind">
+                                <input type="checkbox" name="kind" value="">
+                                <span class="contact-kind-text">資料請求</span>
+                            </label>
+                            <label for="contact-kind" class="contact-kind">
+                                <input type="checkbox" name="kind" value="">
+                                <span class="contact-kind-text">その他</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-item">日時</td>
+                        <td class="contact-body">
+                            <input type="datetime-local" name="date" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-item">お名前</td>
+                        <td class="contact-body">
+                            <input type="text" name="name" class="form-text" required placeholder="例）山田　太郎">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-item">メールアドレス</td>
+                        <td class="contact-body">
+                            <input type="email" name="email" id="email" class="form-text" required
+                                placeholder="例）email.@example.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-item">電話番号</td>
+                        <td class="contact-body">
+                            <input type="tel" name="tel" class="form-text" placeholder="例）090-1234-5678">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-item last">お問い合わせ内容</td>
+                        <td class="contact-body last">
+                            <textarea name="message" id="message" rows="5" class="form-textarea"
+                                placeholder="例）相談したい内容を具体的にご記入ください"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" value="送信" class="contacts-submit">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-items wrapper">
+            <div class="footer-item left">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li>〒123-4567<br>岩手県盛岡市0-0-0</li>
+                    <li><a href="tel:0012345678"></a>TEL:00-1234-5678</li>
+                    <li>営業時間<br>平日　　:　10:00～18:00<br>土日祝　:　10:00～19:00<br>定休日　:　水曜日</li>
+                </ul>
+            </div>
+            <div class="footer-item center">
+                <nav>
+                    <ul>
+                        <li><a href="works.html">建築事例</a></li>
+                        <li><a href="performance.html">性能</a></li>
+                        <li><a href="news1.html">ニュース</a></li>
+                        <li><a href="company.html">会社概要</a></li>
+                    </ul>
+                </nav>
+                <a href="contact.html" class="btn">ご相談・見学予約はこちらから</a>
+            </div>
+            <div class="footer-item right">
+                <script type="text/javascript"
+                    src="https://map.yahoo.co.jp/embedmap/V3/?lon=141.13656&lat=39.70145&zoom=17&cond=action:place;maptype:basic;gid:YJkbqAMC-9E&width=100%&height=312"></script>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Granvia Home. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
